@@ -3,18 +3,19 @@ const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const receptionRoutes = require('./routes/receptionRoutes')
 
 
 const app = express();
 
-app.set('view engine', 'ejs');
-app.set('views', 'views');
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
 
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-//app.use('/admin', adminRoutes);
+app.use('/reception', receptionRoutes);
 
 
 const uri =
