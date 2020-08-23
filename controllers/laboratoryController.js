@@ -1,25 +1,25 @@
 const Patient = require('../models/PatientModel');
 
-exports.getReceptionHome = (req, res) => {
-    res.render('receptionHome');
+exports.getLaboratoryHome = (req, res) => {
+    res.render('laboratoryHome');
 };
 
-exports.postAddReceptionPatient = (req, res) => {
-    const patientFirstName = req.body.patientFirstName;
-    const patientLastName = req.body.patientLastName;
-    const patientGender = req.body.patientGender;
-    const patientAge = req.body.patientAge
-    const date = new Date();
+exports.postAddPatientLabResults = (req, res) => {
+    const patientBloodgroup = req.body.patientBloodgroup;
+    const patientBloodCellCount = req.body.patientBloodCellCount;
+    const patientUrinalysis = req.body.patientUrinalysis;
+    const patientSputumResults = req.body.patientSputumResults
+    const date = new Date(); //I think i should include time instead, what do you guys think?
   
-    const newReceptionPatient = new Patient({
-      patientFirstName,
-      patientLastName,
-      patientGender,
-      patientAge,
+    const newLaboratoryPatient = new Patient({
+      patientBloodgroup,
+      patientBloodCellCount,
+      patientUrinalysis,
+      patientSputumResults,
       date,
     });
   
-    newReceptionPatient
+    newLaboratoryPatient
       .save()
       .then(() => res.json('Patient added!'))
       .catch((err) => res.status(400).json('Error: ' + err));
