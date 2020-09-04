@@ -1,22 +1,14 @@
 import React from 'react';
+import Login from './components/authComponents/login'
+import Register from './components/authComponents/register'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Register />
+   <Login />
+
     </div>
   );
 }
