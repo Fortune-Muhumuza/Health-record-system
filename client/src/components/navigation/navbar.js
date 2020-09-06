@@ -44,6 +44,11 @@ export default function ButtonAppBar() {
             Home
           </Link>
           </Button>
+          <Button>
+          <Link to='/receptionPage' style={{ textDecoration: 'none', color: 'white' }}>
+            Reception
+          </Link>
+          </Button>
         </Toolbar>
       </AppBar>
     </div>

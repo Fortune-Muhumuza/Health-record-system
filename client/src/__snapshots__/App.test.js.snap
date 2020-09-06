@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <h2>
+      learn react
+    </h2>
+    <button
+      data-testid="addToArray"
+    >
+      add
+    </button>
+    <p
+      data-testid="array"
+    >
+      ab
+    </p>
+    <h1
+      data-testid="counter"
+    >
+      0
+    </h1>
+    <button
+      data-testid="button-up"
+    >
+       Up
+    </button>
+    <button
+      data-testid="button-down"
+    >
+      Down
+    </button>
+  </div>
+</DocumentFragment>
+`;
