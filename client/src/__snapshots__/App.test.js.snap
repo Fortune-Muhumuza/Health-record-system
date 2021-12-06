@@ -2,35 +2,103 @@
 
 exports[`should take a snapshot 1`] = `
 <DocumentFragment>
-  <div>
-    <h2>
-      learn react
-    </h2>
-    <button
-      data-testid="addToArray"
+  <div
+    class="container"
+  >
+    <div
+      class="makeStyles-root-4"
     >
-      add
-    </button>
-    <p
-      data-testid="array"
-    >
-      ab
-    </p>
-    <h1
-      data-testid="counter"
-    >
-      0
-    </h1>
-    <button
-      data-testid="button-up"
-    >
-       Up
-    </button>
-    <button
-      data-testid="button-down"
-    >
-      Down
-    </button>
+      <header
+        class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary MuiPaper-elevation4"
+      >
+        <div
+          class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+        >
+          <h6
+            class="MuiTypography-root makeStyles-title-6 MuiTypography-h6"
+          >
+            HMS
+          </h6>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <a
+                href="/login"
+                style="text-decoration: none; color: white;"
+              >
+                Sign in
+              </a>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <a
+                href="/register"
+                style="text-decoration: none; color: white;"
+              >
+                Register
+              </a>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <a
+                href="/homePage"
+                style="text-decoration: none; color: white;"
+              >
+                Home
+              </a>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <a
+                href="/receptionPage"
+                style="text-decoration: none; color: white;"
+              >
+                Reception
+              </a>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </header>
+    </div>
+    <br />
   </div>
 </DocumentFragment>
 `;
