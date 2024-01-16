@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/reception', receptionRoutes);
-app.use('/user', userRoutes);
+// app.use('/user', userRoutes);
 
 
 const uri =
