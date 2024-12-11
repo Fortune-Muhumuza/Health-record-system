@@ -21,7 +21,7 @@ app.use('/reception', receptionRoutes);
 
 const uri =
   // eslint-disable-next-line max-len
-  'mongodb+srv://Fort:fortune@cluster0.144qe.mongodb.net/<dbname>?retryWrites=true&w=majority';
+  'mongo';
 mongoose
   .connect(uri, {
     useNewUrlParser: true,
